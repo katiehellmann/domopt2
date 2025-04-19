@@ -27,7 +27,6 @@ mongoose.connect(dbURI).catch((err) => {
 // import { createClient } from 'redis';
 
 const redisClient = redis.createClient({
-  username: 'default',
   password: process.env.REDIS_PASSWORD,
   socket: {
     host: 'redis-19492.c114.us-east-1-4.ec2.redns.redis-cloud.com',
